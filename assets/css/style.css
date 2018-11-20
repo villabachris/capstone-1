@@ -3,54 +3,175 @@
 	margin: 0;
 	box-sizing: border-box;
 }
-header{
-	border: 1px solid black;
-}
-.navbar{
-	border: 1px solid black;
-}
-
-.banner{
-	height: 100vh;
-	width: 100%;
-	display: block;
-	position: relative;
-}
-
-.banner:after{
-	content: "";
-	background-image: url(../images/pgmc.png);
+#body{
+	/*background-image:url(../images/pgmc.png),url(../images/gradient2.jpg);
 	background-size: cover;
 	background-position: center center;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat,repeat;
 	background-color: rgba(6, 69, 170,0.1);
-	height: 100%;
-	width: 100%;
+	height: 100vh;
+	background-blend-mode: darken;*/
+	background-color: #EBF7F5/*#B9D1CF*/;
+
+}
+#container{
+	background-image: url(../images/pgmc.png),url(../images/gradient.png),url(../images/gradient2.jpeg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat, repeat;
+	height: 100vh;
+	background-blend-mode: darken;
+}
+
+/*.banner:after{
+	content: "";
+	background-image: url(../images/pgmc.png),url(../images/gradient2.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat,repeat;
+	/*background-color: rgba(6, 69, 170,0.1);
+	background-blend-mode: darken;
+	width: 100%
+	height:100%;
 	top: 0;
 	left: 0;
 	opacity: 0.5;
 	position: absolute;
 	z-index: -1;
+}*/
+
+header{
+	width: 100%;
+	background-color: #1D1B55;
+	position: fixed;
+	z-index: 10;
+	
+	
 }
+.navbar{
+
+}
+
 
 .logo{
 	height: 60px;
 	width: 60px;
 }
 .list-link>ul>li:hover{
-	border-bottom:1px solid red;
+	border-bottom:  1px solid red;
 }
 .list-link{
-	border: 1px solid black;
+	
 }
 .list{
-	border: 1px solid black;
+	
 }
 section{
-	position: absolute;
-	top: 40%;
+
 }
 
-.jumbotron{
-	background-color: black;
+#jumbotron{
+	background-color: rgba(52, 152, 219,0.9);
+	margin-top: 10%;
+	font-family: 'Montserrat';
+}
+
+
+/*home page*/
+#jumbo-land{
+	background-image:url(../images/healthcare.png),url(../images/geo.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-radius: 0;
+	background-blend-mode: darken;
+	width: 100%;
+}
+
+#jumbotron-section{
+	z-index: 2
+}
+
+.container h1,p{
+	color: #f2f2f2;
+}
+.w-100{
+	margin-top: 5%;
+	height: 400px;
+	width: 100%;
+}	
+
+#carousel-home{
+	height: 400px;
+	width: 80%;
+	margin: 0 auto;
+
+}
+
+#slide-jumbo{
+	background-color: rgba(64, 64, 122,0.9);
+	border-radius: 0;
+	-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+	clip-path: polygon(50% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+}
+
+footer{
+	border-top: 1px solid red;
+	background-color: #110016;
+}
+footer h3{
+	font-size: 20px;
+	border-left: 1px solid #FF8926;
+}
+footer small{
+	line-height: -5px;
+}
+#sub-foot{
+	background-color: rgba(255, 121, 63,1.0);
+}
+
+/*end of home page*/
+
+
+/*contact*/
+#map{
+	width: 100%;
+}
+#form{
+	background-image: url(../images/contact.jpg),url(../images/gradient2.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-blend-mode: darken;
+	background-color: rgba(26, 188, 156,0.9);
+}
+label[for]{
+	color: #f2f2f2;
+	background-color: rgba(230, 126, 34,1.0);
+	padding: 5px;
+	margin-bottom: 0;
+	border-right: 5px solid #2980b9;
+}
+input[id]{
+	border-radius:  0;
+}
+
+/*end of contact*/
+
+@media only screen  and (max-width:360px){
+
+	header{
+		float: none;
+	}
+	#jumbo-land:before{
+	content:"";
+	display: block;
+	margin-top: 100px;
+
+	}
+	footer small:after{
+		content: "";
+		display: block;
+
+	}
 }
