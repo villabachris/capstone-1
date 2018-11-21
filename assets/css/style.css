@@ -21,6 +21,7 @@
 	background-repeat: no-repeat, repeat;
 	height: 100vh;
 	background-blend-mode: darken;
+	position: relative;
 }
 
 /*.banner:after{
@@ -44,10 +45,13 @@ header{
 	width: 100%;
 	background-color: #1D1B55;
 	position: fixed;
-	z-index: 10;
-	
-	
+	top:0;
+	z-index: 10;	
 }
+#header a{
+	padding-bottom: 0;
+}
+
 .navbar{
 
 }
@@ -70,10 +74,19 @@ section{
 
 }
 
+#goto{
+	margin-left: 78px;
+}
+
 #jumbotron{
 	background-color: rgba(52, 152, 219,0.9);
-	margin-top: 10%;
+	margin-top: 50px;
 	font-family: 'Montserrat';
+	/*top: 30%;
+	left: 30%*/;
+	top: 80px;
+	left: 0;
+	position: absolute;
 }
 
 
@@ -132,11 +145,117 @@ footer small{
 
 /*end of home page*/
 
+/*about page*/
+	#about-container{
+		margin-top: 4%;
+	}
+
+	#card-about{
+		border-left: 2px solid #e74c3c; 
+	}
+	#card-mission{
+		border-right: 2px solid #3498db;
+	}
+	#card-vision{
+		border-left: 2px solid #e74c3c;
+	}
+
+/* end of about page*/
+
+
+
+/*services page*/
+	.accordion{
+		/*margin-top:90px; */
+	}
+
+	#service-head{
+		margin: 70px 0 0 0;
+	}
+
+	#service-list1{
+		background-image: url(../images/outpatient.jpg);
+		background-size: cover;
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+
+	}
+	#service-list2{
+	background-image: url(../images/outpatient.jpg);
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	}
+	#service-list3{
+	background-image: url(../images/outpatient.jpg);
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	}
+	#service-list4{
+	background-image: url(../images/outpatient.jpg);
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	}
+	#service-head{
+		height: 50px;
+		width: 50%;
+		background-color: #1abc9c;
+		-webkit-clip-path: polygon(59% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+		clip-path: polygon(59% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+	}
+	
+
+/*end of services page*/
+
+
 
 /*contact*/
+#contact-container{
+	padding: 0;
+	position: relative;
+
+}
+
 #map{
 	width: 100%;
+	border-left: 1px solid #2980b9;
+	padding-left: 0;
+	position: relative;
+	left: -4%;
 }
+
+#map-head{
+	margin-left: 25%;
+	background-color:#e74c3c;
+	-webkit-clip-path: polygon(0 0, 63% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 63% 0, 100% 100%, 0% 100%);
+}
+#map-head>h2{
+	font-size:30px;
+	color: #f2f2f2; 
+}
+.side{
+	background-color: #c0392b;
+	margin-left: 25.6%;
+	padding: 0;
+	height: 30px;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 46% 49%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 46% 49%);
+	position: relative;
+}
+#side{
+	/*padding-right: 0!important;*/
+}
+
 #form{
 	background-image: url(../images/contact.jpg),url(../images/gradient2.jpg);
 	background-size: cover;
@@ -144,6 +263,7 @@ footer small{
 	background-repeat: no-repeat;
 	background-blend-mode: darken;
 	background-color: rgba(26, 188, 156,0.9);
+	border-bottom: 1px solid red; 
 }
 label[for]{
 	color: #f2f2f2;
@@ -156,13 +276,90 @@ input[id]{
 	border-radius:  0;
 }
 
+#contact-bg{
+	background-color: rgba(39, 174, 96,0.1);
+	padding: 0;
+}
+
 /*end of contact*/
 
 @media only screen  and (max-width:360px){
 
-	header{
-		float: none;
+	#service-list1{
+		
+		background-position: right;
+		
+
 	}
+	#service-list2{
+	
+	background-position: right;
+
+
+	}
+	#service-list3{
+	
+	background-position:right;
+
+
+	}
+	#service-list4{
+
+	background-position:  right;
+
+
+	}	
+
+
+
+	#goto{
+	margin-left: 33px;
+}
+
+	#jumbotron{
+		margin-top: 80px;
+		left:-24%;
+		top: 50%;
+		position: absolute;
+	}
+
+	#map{
+	width: 100%;
+	border-left: 1px solid #2980b9;
+	padding-left: 0;
+	padding-right: 0;
+	position: relative;
+	left: 0;
+	}
+
+	.side{
+	background-color: #c0392b;
+	margin-left: 0;
+	padding: 0;
+	height: 30px;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 46% 49%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 46% 49%);
+	position: relative;
+	}
+
+	#map-head{
+	margin-left: 0%;
+	margin-top: -1%;
+	height: 100px;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+
+	#map-head>h2{
+	font-size:30px;
+	color: #f2f2f2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 25%; 
+	line-height: 100px;
+	}
+
 	#jumbo-land:before{
 	content:"";
 	display: block;
@@ -172,6 +369,16 @@ input[id]{
 	footer small:after{
 		content: "";
 		display: block;
-
 	}
+
+	
 }
+
+@media only screen  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) {
+
+  		#goto{
+			margin-left: 136px;
+		}
+
+  }
