@@ -143,6 +143,50 @@ footer small{
 	background-color: rgba(255, 121, 63,1.0);
 }
 
+
+#social-i i{
+
+	font-size: 35px;
+	margin: 0 22px;
+}
+#social-i a:hover{
+
+	color: white;
+}
+#social-i{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #451e1a;
+	margin-left: 100px;
+}
+#social-col{
+	border-left: 2px solid #2c0338;
+}
+
+#footer-name{
+	color: #b4b0b0;
+	letter-spacing: 5px;
+	margin-top: 65px;
+	margin-left: 94px;
+}
+#footer-name p{
+	color: #b4b0b0;
+	font-family: "Ubuntu", arial;
+}
+#footer-name small{
+	letter-spacing: 0;
+	color: #626262;
+	font-family: "Ubuntu", arial;
+	margin-left: 94px;
+}
+#footer-name .allright{
+	font-size: 12px;
+	letter-spacing: 0;
+	margin-left: -38px;
+}
+#footer-name>.allright i{
+	color: #f2f2f2;
+}
+
 /*end of home page*/
 
 /*about page*/
@@ -165,6 +209,18 @@ footer small{
 
 
 /*services page*/
+	#service-group{
+		margin-bottom: 50px;		
+	}
+
+	#service-bg{
+		background-image: url(../images/service-bg.jpg),url(../images/gradient2.jpg);
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-blend-mode: overlay;
+	}
+
 	.accordion{
 		/*margin-top:90px; */
 	}
@@ -186,6 +242,7 @@ footer small{
 	background-size: cover;
 	background-position: top center;
 	background-repeat: no-repeat;
+	background-blend-mode: darken;
 	background-attachment: fixed;
 
 	}
@@ -203,16 +260,130 @@ footer small{
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	border-bottom: 2px solid #e74c3c;
+
 
 	}
 	#service-head{
-		height: 50px;
+		height: 80px;
 		width: 50%;
-		background-color: #1abc9c;
+		background-color: #3498db;
 		-webkit-clip-path: polygon(59% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
 		clip-path: polygon(59% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
 	}
-	
+	#service-head>h1{
+		line-height: 100px;
+		color: #ecf0f1;
+		margin-left: 20px;
+		border-left: 2px solid #2980b9;
+		padding-left: 10px;
+	}
+	#service-container{
+		left: -40px;
+		position: relative;
+		z-index: 1;
+	}
+	.head-side{
+		height: 100px;
+		width: 100px;
+		background-color: #2980b9;
+		position: absolute;
+		top: 22.40%;
+		left: 1%;
+		z-index: 0;
+		-webkit-clip-path: polygon(100% 0, 19% 0, 100% 100%);
+		clip-path: polygon(100% 0, 19% 0, 100% 100%);
+	}
+	#fas{
+		color: #d35400;
+		border-bottom: 2px solid #2980b9;
+		padding-bottom: 2px;
+	}
+	.btn>h5{
+		color: #d35400;
+		font-weight: bold;
+		font-size: 20px;
+		transition-property: background,color;
+		transition-duration: 1.50s;
+		transition-timing-function: linear;
+
+	}
+	.btn>h5:hover{
+		color: rgba(241, 196, 15,1.0);
+		font-size: 30px;
+		background-color: rgba(52, 152, 219,0.5);
+		padding: 15px;
+		border-radius: 5px;
+		border-left: 2px groove rgba(231, 76, 60,0.5);
+
+	}
+
+	#collapse4,
+	#collapse3,
+	#collapse2,
+	#collapse1
+	{
+		border-bottom: 2px solid #e74c3c; 
+	}
+
+	#emergency{
+		background-image: url(../images/emergency.jpg),url(../images/gradient.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-blend-mode: darken;
+	}
+	#emergency>p{
+		color:#f2f2f2;
+		font-weight: bold;
+		background-color: rgba(211, 84, 0,0.60);
+		padding: 20px;
+		border-radius: 10px;
+	}
+
+	#outpatient{
+		background-image: url(../images/doctors3.jpg),url(../images/gradient.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: right;
+		background-blend-mode: darken;
+	}
+	#outpatient>p{
+		color:#f2f2f2;
+		font-weight: bold;
+		background-color: rgba(211, 84, 0,0.60);
+		padding: 20px;
+		border-radius: 10px;
+	}
+	#surgical{
+		background-image: url(../images/doctors3.jpg),url(../images/gradient.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: right;
+		background-blend-mode: darken;
+	}
+	#surgical>p{
+		color:#f2f2f2;
+		font-weight: bold;
+		background-color: rgba(211, 84, 0,0.60);
+		padding: 20px;
+		border-radius: 10px;
+	}
+	#laboratory{
+		background-image: url(../images/laboratory.jpg),url(../images/gradient.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: right;
+		background-blend-mode: darken;
+	}
+	#laboratory>p{
+		color:#f2f2f2;
+		font-weight: bold;
+		background-color: rgba(211, 84, 0,0.60);
+		padding: 20px;
+		border-radius: 10px;
+	}
+
 
 /*end of services page*/
 
@@ -283,38 +454,94 @@ input[id]{
 
 /*end of contact*/
 
-@media only screen  and (max-width:360px){
+/*Desktop*/
+@media	only screen and (min-width: 961px){
+	#social-i i{
+  		margin-left: 50px;
+  	}
+  	#footer-name small{
+	letter-spacing: 0;
+	color: #626262;
+	font-family: "Ubuntu", arial;
+	margin-left: 150px;
+	}
+	#footer-name .allright{
+	font-size: 12px;
+	letter-spacing: 0;
+	margin-left: -50px;
+	}
+	#footer-name>.allright i{
+	color: #f2f2f2;
+	}
+}
 
-	#service-list1{
-		
-		background-position: right;
-		
+
+
+
+
+
+/*tablet style*/
+@media only screen and (min-width: 401px) and (max-width: 960px;){
+x`1
+	.head-side{
+		display: none;
+	}
+
+}
+
+/*mobile*/
+@media only screen  and (max-width:400px){
+
+	#jumbotron{
 
 	}
+
+	#goto{
+			left: -15%;
+		}
+
+	.btn>h5:hover{
+		color: rgba(241, 196, 15,1.0);
+		font-size: 20px;
+		padding: 5px;
+		border-left: 2px groove rgba(231, 76, 60,0.5);
+	}
+
+	#service-list1{
+	background-position: right;
+	}
+
 	#service-list2{
 	
 	background-position: right;
-
-
 	}
+
 	#service-list3{
-	
 	background-position:right;
-
-
 	}
+
 	#service-list4{
-
 	background-position:  right;
+	border-bottom: 2px solid red;
+	}
+	
+		
 
+	#service-head{
+		width: 100%;
+	-webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+	}
 
-	}	
+	.head-side{
+		visibility: hidden;
+	}
 
 
 
 	#goto{
 	margin-left: 33px;
-}
+	}
 
 	#jumbotron{
 		margin-top: 80px;
@@ -371,14 +598,107 @@ input[id]{
 		display: block;
 	}
 
-	
+		#social-i i{
+		font-size: 50px;
+		margin-top: 50px;
+		margin-left: 1px;
+		padding: 20px 0;
+  		}
+
+  		#social-i{
+  		margin-left: 12px;
+  		margin-top: -36px;
+  		border: none;
+	  	}
+	  	#footer-name small{
+		margin-left: 0px;
+		}
+		#footer-name .allright{
+		margin-bottom: 50px;
+		margin-left: 79px;
+		}
+		#footer-name>.allright i{
+		}
+		#footer-name{
+		width: 100%;
+		text-align: center;
+		letter-spacing: 0;
+		font-size: 15px;
+		margin-left: -81px;
+
+		}
+		#social-col{
+			margin-left: -100px;
+			border-left: none;
+		}
+		#footer-name>p{
+			margin-left: 153px;
+			margin-bottom: -2px;
+		}
+		#footer-name>.copy{
+			margin-top: -100px;
+			margin-left: 147px;
+		}
+		footer{
+			height: 100vh;
+		}
+		#stay{
+			margin-top: 80px;
+		}
+		/*#stay small{
+			text-align: 
+			margin-left: 12px;
+			padding: 0;
+		}*/
+		#stay>input[type="text"]{
+			margin-left: 22px;
+		}
+		#footer-name .allright{
+		
+		margin-left:-50px;
+		}
 }
 
-@media only screen  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) {
 
-  		#goto{
-			margin-left: 136px;
+
+
+
+/*mobile*/
+@media only screen  and (max-width: 768px) 
+   {
+
+  		.head-side{
+  			visibility: hidden;
+  		}
+  		.navbar-nav{
+  			left: -18%;
+  		}
+  		#footer-name>.copy{
+			margin-top: -100px;
+			margin-left: 55px;
 		}
+		.allright>#all{
+		margin-left: 19px;
+
+		}
+		#all{
+			margin: 0;
+		}
+		#social-i i {
+	    font-size: 35px;
+	    margin: 0px 13px;
+	    }
+ }	
+/*
 
   }
+
+
+@media only screen  and (max-width: 1050px){
+	.navbar-nav{
+  			left: -7%;
+  		}
+  	#social-i i{
+  		margin-left: 22px;
+  	}
+} 

@@ -6,13 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
 	<title>Capstone 1</title>
 	
-	<link rel="logo" type="image/png" href="assets/images/tab-logo.png">
+	<link rel="icon" type="image/png" href="assets/images/tab-logo.png">
 
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
 	<!-- google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
 
 	<!-- bootstrap link -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -23,7 +27,7 @@
 
 <body id="body">
 
-	<div class="container-fluid px-0">
+	<div id="service-bg" class="container-fluid px-0">
 		
 			<header id="header"class="navbar-dark">
 				<nav class="navbar navbar-expand-md px-0 sticky-top">
@@ -44,14 +48,15 @@
 			</nav>
 			</header>
 
-				<div class="container-fluid">
+				<div id="service-group" class="container-fluid">
 					<div class="container-fluid">
 						<div class="row">
-							<div class="col-12 col-md-11 col-lg-11 mx-auto px-0">
-								<div  id="service-head" class="jumbotron mb-0">
-								<h1>Services</h1>
+							<div id="service-container" class="col-12 col-md-11 col-lg-11 mx-auto px-0">
+								<div  id="service-head" class="container mb-0 animated fadeInLeft">
+								<h1><i id="fas" class="fas fa-user-md"></i> Services</h1>
 								</div>
 							</div>
+							<div class="head-side animated fadeInLeft"></div>
 						</div>
 					</div>
 					<div class="row">
@@ -60,38 +65,46 @@
 								<div class="card-header py-5" id="service-list1">
 									<h5 class="mb-0 text-center">
 										<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1">
-											Emergency Care
+											<h5>Emergency Care</h5>
 										</button>
 									</h5>
 								</div>
 							</div>
 							<div id="collapse1" class="collapse">
-								<div class="card-body">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<div id="emergency" class="card-body">
+									<p class="text-center">Accidents happen. So does life. That's why PGMC is here for you every day. Our round-the-clock emergency room is close to home, with doctors and nurses who are here when you need them. Our highly skilled staff treats both children and adults in a caring, family-friendly environment.
+
+ 
+
+									We offer state-of-the-art diagnostic and laboratory services, including X-ray, CT, MRI and ultrasound. All of which means no matter what the emergency – from stitches to stroke – you can count on our rapid response, personalized care and medical resources.</p>
 								</div>
 							</div>
 							<div class="card">
 								<div class="card-header py-5" id="service-list2">
-									<h5 class="mb-0 text-center">
+									<h5 id="h5" class="mb-0 text-center">
 										<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2">
-											Out-patient Services
+											<h5>Out-patient Services</h5>
 										</button>
 									</h5>
 								</div>
 							</div>
 							<div id="collapse2" class="collapse">
-								<div class="card-body">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<div id="outpatient" class="card-body">
+									<p class="text-light text-center shadow">PGMC Nursing Outpatient Services provides treatment for a wide variety of medical conditions. Available 24/7, our compassionate caregivers are here to care for you and your loved ones.
+									<br>
+									Our experienced nurses play an integral role in coordinating your care with physicians and clinical pharmacists, while working to achieve the best possible outcome.
+									<br>
+									 For your convenience, we schedule your services prior to arrival, avoiding an ER visit and the need to wait for your medications.
+									<p class="text-center">
+										Infusion services include:
+									<br>
+										-IV medications including antibiotics
+									<br>	
+										-Subcutaneous and intramuscular medications
+									<br>
+										-blood product transfusion</p>
+
+															 
 								</div>
 							</div>
 
@@ -99,19 +112,20 @@
 								<div class="card-header py-5" id="service-list3">
 									<h5 class="mb-0 text-center">
 										<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse3">
-											Surgical Services
+											<h5>Surgical Services</h5>
 										</button>
 									</h5>
 								</div>
 							</div>
 							<div id="collapse3" class="collapse">
-								<div class="card-body">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<div id="surgical" class="card-body">
+									<p>PGMC surgery team provides you with the best experience possible—before, during and after surgery. We strive to make every patient feel comfortable and keep them well informed.
+									<br>
+									Our staff takes the time to make sure there is an understanding between the patient, the nurse and the team of doctors.
+									<br>
+									We provide comprehensive general surgery services and specialty skills in orthopedic, pain management and podiatry, as well as infusion services. We also do colonoscopy and endoscopy screenings. All surgeons are qualified in their fields and have the training and experience to care for a wide-variety of surgical problems.
+									<br>
+									All members of our team are dedicated to providing you with quality surgical care tailored to the specific needs of your case.</p>
 								</div>
 							</div>
 
@@ -119,19 +133,16 @@
 								<div class="card-header py-5" id="service-list4">
 									<h5 class="mb-0 text-center">
 										<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse4">
-											Laboratory
+											<h5>Laboratory</h5>
 										</button>
 									</h5>
 								</div>
 							</div>
 							<div id="collapse4" class="collapse">
-								<div class="card-body">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<div id="laboratory" class="card-body">
+									<p>Skyline Hospital’s laboratory is available around-the-clock for emergency patients, which means you receive your test results when you need them. For non-emergencies, see our lab hours below.
+									<br>
+									Skyline’s in-house testing provides a quick, accurate ability to diagnose infections. Our CLIA-certified lab works closely with the Klickitat County Health Department and local businesses in need of testing. Tests are done on a drop in and confidential basis. Employee drug testing services are also available.</p>
 								</div>
 							</div>
 
@@ -155,17 +166,31 @@
 			
 	
 
-			<footer class="container-fluid pt-3 mt-5">
+			<footer class="container-fluid pt-3">
 				<div class="row">
-					<div class="col-md-2 col-12">
+					<div id="stay" class="col-md-2 col-12">
 						<h3 class="text-light pl-2">Stay Connected</h3>
 						<small class="text-light">Join to recieve email from us to be
-						 upadted to our promos and events</small>
+						 updated to our promos and events</small>
 						<input type="text" name="text" placeholder=" Enter Email.." cols="1">
-						<input id="sub-foot" class="btn " type="submit" name="Submit">
+						<input id="sub-foot" class="btn" type="submit" name="Submit">
 					</div>
-					<div class="col-md-5"></div>
-					<div class="col-md-5"></div>
+					<div id="social-col" class="col-md-5 col-12 mx-auto">
+						<div id="social-i" class="container">
+							<a href="#"><i class="fab fa-github"></i></a>
+							<a href="#"><i class="fab fa-gitlab"></i></a>
+							<!-- <a href="#"><i class="fas fa-envelope"></i></a> -->
+							<a href="#"><i class="fab fa-facebook-square"></i></a>
+							<a href="#"><i class="fas fa-envelope"></i></a>
+						</div>
+						<div id="footer-name" class="container">
+							<p class="text-center">Christopher Villaba</p>
+							<small class="copy">&copy;Copyright <i>2018-2019</i></small>
+						<div id="allright" class="allright col-12">
+							<small id="all"> All rights reserved. Powered by <i>TuittBootcamp</i></small>
+						</div>
+						</div>
+					</div>
 				</div>
 			</footer>
 		
