@@ -111,7 +111,7 @@ img[src*="facility"]{
 	clip-path: polygon(100% 33%, 100% 100%, 75% 100%, 0% 100%, 0 33%, 50% 52%);
 	clear: both;
 	position: absolute;
-	top: 190%;
+	top: %;
 	left: -0%;
 	z-index: -1;
 }
@@ -501,7 +501,7 @@ input[id]{
 		z-index: 5;
 	}*/
 	#about-car:after{
-		top: 171%;
+		top: 90%;
 	}
 	#social-i i{
   	margin-left: 50px;
