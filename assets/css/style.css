@@ -541,6 +541,9 @@ input[id]{
 		margin-left: 27%;
 		z-index: 5;
 	}
+	#goto{
+		margin-left: 142px;
+	}
 }
 
 
