@@ -593,6 +593,11 @@ input[id]{
 /*mobile*/
 @media only screen  and (max-width:400px){
 
+	#about-car:after{
+		top: 165%;
+	}
+
+
 	img[src*="facility"]{
 		height: 300px;
 	}
