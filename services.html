@@ -11,6 +11,9 @@
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+	<!-- animate link -->
+	<link rel="stylesheet" type="text/css" href="assets/animate/animate.css">
+
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
@@ -29,7 +32,7 @@
 
 	<div id="service-bg" class="container-fluid px-0">
 		
-			<header id="header"class="navbar-dark">
+			<header id="header" class="navbar-dark">
 				<nav class="navbar navbar-expand-md px-0 sticky-top">
 					<a class="navbar-brand" href="home.html"><span class="c-logo pl-5">PGMC</span></a>
 
@@ -38,8 +41,8 @@
 				</button>
 				
 				<div class="list-link collapse navbar-collapse px-0 mx-0" id="navcollapse">
-					<ul class="navbar-nav list col-md-4 offset-md-8 pl-5 ">
-						<li class="nav-item "><a class="nav-link" href="home.html">Home</a></li>
+					<ul id="left-link" class="navbar-nav list col-md-4 offset-md-8 pl-5 ">
+						<li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
 						<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 						<li class="nav-item active"><a class="nav-link" href="services.html">Services</a></li>
 						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -71,12 +74,17 @@
 								</div>
 							</div>
 							<div id="collapse1" class="collapse">
+								<img class="card-img-top" src="assets/images/emergency2.jpg">
 								<div id="emergency" class="card-body">
-									<p class="text-center">Accidents happen. So does life. That's why PGMC is here for you every day. Our round-the-clock emergency room is close to home, with doctors and nurses who are here when you need them. Our highly skilled staff treats both children and adults in a caring, family-friendly environment.
-
- 
-
-									We offer state-of-the-art diagnostic and laboratory services, including X-ray, CT, MRI and ultrasound. All of which means no matter what the emergency – from stitches to stroke – you can count on our rapid response, personalized care and medical resources.</p>
+									<p class="text-center">Accidents happen. So does life. That's why PGMC is here for you every day.
+									<br>	
+									Our round-the-clock emergency room is close to home, with doctors and nurses who are here when you need them.
+									<br>
+									 Our highly skilled staff treats both children and adults in a caring, family-friendly environment.
+									<br>
+									We offer state-of-the-art diagnostic and laboratory services, including X-ray, CT, MRI and ultrasound.
+									<br>
+									 All of which means no matter what the emergency – from stitches to stroke – you can count on our rapid response, personalized care and medical resources.</p>
 								</div>
 							</div>
 							<div class="card">
@@ -89,20 +97,24 @@
 								</div>
 							</div>
 							<div id="collapse2" class="collapse">
+								<img class="card-img-top" src="assets/images/outpatient2.jpg">
 								<div id="outpatient" class="card-body">
 									<p class="text-light text-center shadow">PGMC Nursing Outpatient Services provides treatment for a wide variety of medical conditions. Available 24/7, our compassionate caregivers are here to care for you and your loved ones.
 									<br>
 									Our experienced nurses play an integral role in coordinating your care with physicians and clinical pharmacists, while working to achieve the best possible outcome.
 									<br>
 									 For your convenience, we schedule your services prior to arrival, avoiding an ER visit and the need to wait for your medications.
-									<p class="text-center">
+									<br>
+									<br>
+											
 										Infusion services include:
-									<br>
+										<br>
 										-IV medications including antibiotics
-									<br>	
+										<br>
 										-Subcutaneous and intramuscular medications
-									<br>
+										<br>
 										-blood product transfusion</p>
+										
 
 															 
 								</div>
@@ -118,8 +130,9 @@
 								</div>
 							</div>
 							<div id="collapse3" class="collapse">
+								<img class="card-img-top" src="assets/images/surgical.jpg">
 								<div id="surgical" class="card-body">
-									<p>PGMC surgery team provides you with the best experience possible—before, during and after surgery. We strive to make every patient feel comfortable and keep them well informed.
+									<p class="text-center">PGMC surgery team provides you with the best experience possible—before, during and after surgery. We strive to make every patient feel comfortable and keep them well informed.
 									<br>
 									Our staff takes the time to make sure there is an understanding between the patient, the nurse and the team of doctors.
 									<br>
@@ -139,8 +152,9 @@
 								</div>
 							</div>
 							<div id="collapse4" class="collapse">
+								<img class="card-img-top" src="assets/images/laboratory2.jpg">
 								<div id="laboratory" class="card-body">
-									<p>Skyline Hospital’s laboratory is available around-the-clock for emergency patients, which means you receive your test results when you need them. For non-emergencies, see our lab hours below.
+									<p>PGMC Hospital’s laboratory is available around-the-clock for emergency patients, which means you receive your test results when you need them. For non-emergencies, see our lab hours below.
 									<br>
 									Skyline’s in-house testing provides a quick, accurate ability to diagnose infections. Our CLIA-certified lab works closely with the Klickitat County Health Department and local businesses in need of testing. Tests are done on a drop in and confidential basis. Employee drug testing services are also available.</p>
 								</div>
@@ -166,33 +180,34 @@
 			
 	
 
-			<footer class="container-fluid pt-3">
+				<footer class="container-fluid pt-3">
 				<div class="row">
-					<div id="stay" class="col-md-2 col-12">
+					<div id="stay" class="col-md-4 col-lg-2 col-12">
 						<h3 class="text-light pl-2">Stay Connected</h3>
 						<small class="text-light">Join to recieve email from us to be
 						 updated to our promos and events</small>
 						<input type="text" name="text" placeholder=" Enter Email.." cols="1">
 						<input id="sub-foot" class="btn" type="submit" name="Submit">
 					</div>
-					<div id="social-col" class="col-md-5 col-12 mx-auto">
-						<div id="social-i" class="container">
+					<div id="social-col" class="col-md-8 col-lg-10 col-12">
+						<div id="social-i" class="container text-center">
 							<a href="#"><i class="fab fa-github"></i></a>
 							<a href="#"><i class="fab fa-gitlab"></i></a>
-							<!-- <a href="#"><i class="fas fa-envelope"></i></a> -->
 							<a href="#"><i class="fab fa-facebook-square"></i></a>
 							<a href="#"><i class="fas fa-envelope"></i></a>
 						</div>
-						<div id="footer-name" class="container">
+						<div id="footer-name" class="container px-0">
 							<p class="text-center">Christopher Villaba</p>
-							<small class="copy">&copy;Copyright <i>2018-2019</i></small>
-						<div id="allright" class="allright col-12">
-							<small id="all"> All rights reserved. Powered by <i>TuittBootcamp</i></small>
-						</div>
+							<p id="copy" class="text-center">&copy;Copyright <i>2018-2019</i></p>
+						
+							<p class="all"> All rights reserved. Powered by <i>TuittBootcamp</i></p>
+						
 						</div>
 					</div>
 				</div>
 			</footer>
+
+		
 		
 		
 	</div>
