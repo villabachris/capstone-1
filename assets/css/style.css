@@ -124,7 +124,7 @@ img[src*="facility"]{
 /*home page*/
 
 #comp-name{
-	background-color: rgba(241, 196, 15,0.8);
+	background-color:#17a2b8;
 	border-top-right-radius: 20px; 
 	width: 60%;
 	height: 65px;
