@@ -111,7 +111,7 @@ img[src*="facility"]{
 	clip-path: polygon(100% 33%, 100% 100%, 75% 100%, 0% 100%, 0 33%, 50% 52%);
 	clear: both;
 	position: absolute;
-	top: %;
+	top: 200%;
 	left: -0%;
 	z-index: -1;
 }
@@ -122,6 +122,29 @@ img[src*="facility"]{
 	}
 
 /*home page*/
+
+#comp-name{
+	background-color: rgba(241, 196, 15,0.8);
+	border-top-right-radius: 20px; 
+	width: 60%;
+	height: 65px;
+	line-height: 63px;
+	margin-left: -128px;
+	padding-right: 20px;
+}
+#comp-tag{
+	background-color: rgba(52, 73, 94,1.0);
+    width: 59.9%;
+	margin-top: -8px;
+	padding-left: 123px;
+	margin-left: -128px;
+}
+
+/*#car-top{
+	height: 0px;
+}*/
+
+
 #car-text{
 	background-color: rgba(255,235,59,0.7);
 	font-size: 50px;
@@ -155,7 +178,7 @@ img[src*="facility"]{
 }	
 
 #carousel-home{
-	height: 400px;
+	height: 538px;
 	width: 80%;
 	margin: 0 auto;
 
@@ -506,7 +529,10 @@ input[id]{
 
 /*Desktop*/
 @media	only screen and (min-width: 961px){
-	
+	#about-car:after{
+	top: 170%;
+	}
+
 	#social-i i{
   	margin-left: 50px;
   	}
@@ -561,8 +587,20 @@ input[id]{
 		font-size: 30px;
 
 	}*/
+		#comp-name{
+    font-size: 30px;
+    width: 67%;
+    height: 60px;
+    margin-left: -47px;
+	}
+
+	#comp-tag{
+    width: 78.9%;
+	padding-left: 117px;
+	}
+
 	#about-car:after{
-	top: 100%;
+	top: 120%;
 	}
 
 	#car-text{
@@ -600,14 +638,24 @@ input[id]{
 /*mobile*/
 @media only screen  and (max-width:400px){
 
-	/*#car-text{
-	font-size: 10px;
-	width: 100%;
-	margin-left: 30%;
-	}*/
+	#comp-name{
+	font-size: 25px;
+    width: 121%;
+    height: 53px;
+    margin-left: -32px;
+	}
+
+	#comp-tag{
+    width: 153.9%;
+	padding-left: 108px;
+	}
+
+	#car-text{
+	
+	}
 
 	#about-car:after{
-		top: 165%;
+		top: 185%;
 	}
 
 
@@ -821,9 +869,3 @@ input[id]{
 
   }
 
-
-/*@media only screen  and (min-width: 1024px){
-	#about-car:after{
-	top: 0%;
-	}
-} */
