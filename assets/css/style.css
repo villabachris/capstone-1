@@ -117,10 +117,20 @@ img[src*="facility"]{
 }
 
 #about-car h2{
-		background-color: #f0c033;
+		background-color: #ffc107;
+		
 	}
 
 /*home page*/
+#car-text{
+	background-color: rgba(255,235,59,0.7);
+	font-size: 50px;
+	width: 50%;
+	margin-left: -167px;
+	border-top-right-radius: 20px;
+}
+
+
 #jumbo-land{
 	background-image:url(../images/healthcare.png),url(../images/geo.jpg);
 	background-size: cover;
@@ -563,6 +573,15 @@ input[id]{
 		font-size: 30px;
 
 	}*/
+	#about-car:after{
+	top: 100%;
+	}
+
+	#car-text{
+	font-size: 33px;
+	width: 44%;
+	margin-left: -105px;
+	}
 	#copy{
 		margin-left: -9px;
 	}
@@ -592,6 +611,12 @@ input[id]{
 
 /*mobile*/
 @media only screen  and (max-width:400px){
+
+	/*#car-text{
+	font-size: 10px;
+	width: 100%;
+	margin-left: 30%;
+	}*/
 
 	#about-car:after{
 		top: 165%;
