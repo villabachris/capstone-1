@@ -530,7 +530,7 @@ input[id]{
 /*Desktop*/
 @media	only screen and (min-width: 961px){
 	#about-car:after{
-	top: 170%;
+	top: 180%;
 	}
 
 	#social-i i{
@@ -614,7 +614,9 @@ input[id]{
 
 	
 	.all{
-		margin-left: 69px;
+	    margin-left: 121px;
+	    font-size: 8px;
+	    letter-spacing: 1px;
 
 	}
 	#map-head{
