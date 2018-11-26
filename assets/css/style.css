@@ -506,22 +506,10 @@ input[id]{
 
 /*Desktop*/
 @media	only screen and (min-width: 961px){
-	/*#about-car{
-		margin-bottom: 50px;
-		z-index: 5;
-	}*/
-	#about-car:after{
-		top: 155%;
-	}
+	
 	#social-i i{
   	margin-left: 50px;
   	}
-  /*	#footer-name small{
-	letter-spacing: 0;
-	color: #626262;
-	font-family: "Ubuntu", arial;
-	margin-left: 150px;
-	}*/
 	#footer-name .allright{
 	font-size: 12px;
 	letter-spacing: 0;
@@ -829,16 +817,13 @@ input[id]{
 	    	margin-left: 18.666667%;
 	    }
  }	*/
-/*
+
 
   }
 
 
-@media only screen  and (max-width: 1050px){
-	.navbar-nav{
-  			left: -7%;
-  		}
-  	#social-i i{
-  		margin-left: 22px;
-  	}
-} 
+/*@media only screen  and (min-width: 1024px){
+	#about-car:after{
+	top: 0%;
+	}
+} */
