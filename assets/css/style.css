@@ -528,17 +528,17 @@ input[id]{
 		margin-left: 22%;
 	}
 	#map{
-		margin-left: 39%;
+		margin-left: 32%;
 		margin-top: -3%;
 		z-index: 1;
 	}
 	#side{
 		width: 11%;
-		margin-left:27%;
+		margin-left:25%;
 		z-index:-2; 
 	}
 	#map-head{
-		margin-left: 27%;
+		margin-left: 25%;
 		z-index: 5;
 	}
 	#goto{
